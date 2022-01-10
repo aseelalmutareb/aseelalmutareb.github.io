@@ -1,0 +1,35 @@
+.awards{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.section__title--awards{
+    text-align: center;
+    font-size: $fs-h2-2;
+    color: $clr-dark;
+}
+
+.awards__body{
+
+    & ul{
+        list-style-type: none;
+        text-indent: -2.5em;
+        margin-left: 2.5em; 
+        line-height: 6em;
+    }
+
+    & ul li::before {
+        content: "\f559";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900;
+        color: $clr-accent;
+        padding-right: .7rem;
+        font-size: 3rem;
+        vertical-align: middle;
+    }
+
+}

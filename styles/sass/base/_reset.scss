@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-color: $clr-dark $clr-accent;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $clr-accent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $clr-dark;
+  }
+
+*:focus{
+    outline: none;
+}

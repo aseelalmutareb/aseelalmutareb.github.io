@@ -1,0 +1,120 @@
+.contact{
+    min-height: 90vh;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr-accent;
+    box-shadow: $bs-2;
+}
+
+.section__title--contact{
+    color: $clr-dark;
+    font-size: $fs-h2-2;
+}
+
+.contact__body{
+    align-self: center;
+    width: fit-content;
+}
+
+
+.section-contact{
+    color: $clr-light;
+    font-size:1.5rem;
+    line-height:50px;
+    font-weight:bold;
+}
+
+form{
+    text-align: center;
+}
+    
+.section-contact textarea{
+    height:34px;
+}
+
+.section-contact input[type="text"],
+.section-contact input[type="email"],
+.section-contact textarea{
+    opacity:.6;
+    background:none;
+    border:none;
+    font-size:1.5rem;
+    line-height:1.5rem;
+    color: $clr-light;
+    border-bottom:2px solid $clr-light;
+    outline: none;
+}
+
+.section-contact ::-webkit-input-placeholder{
+    color: $clr-light;
+    font-size:1.5rem;
+    line-height:1.5rem;
+}
+
+.section-contact ::-moz-placeholder{
+    color: $clr-light;
+    font-size:1.5rem;
+    line-height:1.5rem;
+}
+
+.section-contact :-ms-input-placeholder{
+    color: $clr-light;
+    font-size:1.5rem;
+    line-height:1.5rem;
+}
+
+.section-contact :-moz-placeholder{
+    color: $clr-light;
+    font-size:1.5rem;
+    line-height:1.5rem;
+}
+
+.section-contact input[type="submit"]{
+    opacity:1;
+    background:none;
+    border:none;
+    font-size:1.5rem;
+    line-height:1.5rem;
+    color: $clr-light;
+    padding:0;
+    cursor: pointer;
+}
+
+.section-contact .submit{
+    display:inline-block;
+    cursor:pointer;
+}
+
+.section-contact .submit span{
+    cursor:pointer;
+    padding:.3rem 1rem .5rem 1rem;
+    background-image:linear-gradient(180deg, $clr-dark 0%, $clr-accent 100%);
+    background-repeat:no-repeat;
+    background-size:100% 0.2em;
+    background-position:0 69%;
+    transition:background-size 0.3s ease;
+}
+
+.section-contact .submit:hover span,
+.section-contact .submit:focus span{
+    background-size:100% 88%;
+}
+
+.section-contact input[type="submit"]:focus{
+    outline: dotted $clr-light;
+}
+
+.section-contact div.fromBottomIn{
+    transition-delay:1s;
+}
+
+form label{
+    display: none;
+}
+
+
+
+

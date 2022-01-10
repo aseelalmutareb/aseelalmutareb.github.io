@@ -1,0 +1,213 @@
+@media (min-width: 1030px) and (max-width: 1079px){
+    $fs-h1: 5rem;
+
+    h1{ 
+        font-size: $fs-h1;
+    }
+}
+
+@media (min-width: 881px) and (max-width: 1029px){
+    $fs-h1: 4rem;
+
+    h1{ 
+        font-size: $fs-h1;
+    }
+
+    .main-img{
+        padding-right: 0 !important;
+    }
+}
+
+@media (max-width: 880px){
+    .banner{
+        gap: 2em;
+        .main-img{
+            grid-area: 1 / 1 / 2 / 3;
+            place-self: center;
+            padding-right: 0;
+            padding-top: 2em;
+            width: 100%;
+        }
+
+        h1{
+            grid-area: 2 / 1  / 3 / 3;
+            padding-top: 0;
+        }
+
+        p{
+            grid-area: 3 / 1  / 4 / 3;
+        }
+
+        .icons{
+            grid-area: 3 / 1  / 4 / 3;
+            margin: 4em;
+        }
+    }
+
+    .about-me{
+        grid-template-columns: 1fr;
+    }
+
+    .section__title--about{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .about-me__body{
+        grid-area: 2 / 1 / 3 / 3;
+        text-align: center;
+
+        p:not(:first-child){
+            text-align: left;
+        }
+    }
+
+    .work{
+        grid-template-columns: 1fr;
+    }
+
+    .section__title--work{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .work__body{
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .container{
+        padding-right: 0 !important;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        grid-template-areas:
+        'image1'
+        'image2'
+        'image3'
+        'image4'
+        'image5'
+        'image6';
+        place-content: center !important;
+        padding: 1.5em;
+    }
+
+    .gallery__item--1{
+        grid-area: image1 !important;
+    }
+
+    .gallery__item--2 {
+        grid-area: image2 !important;
+    }
+
+    .gallery__item--3 {
+        grid-area: image3 !important;
+    }
+
+    .gallery__item--4 {
+        grid-area: image4 !important;
+    }
+
+    .gallery__item--5 {
+        grid-area: image5 !important;
+    }
+
+    .gallery__item--6 {
+        grid-area: image6 !important;
+    }
+
+    .awards{
+        grid-template-columns: 1fr;
+    }
+
+    .section__title--awards{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .awards__body{
+        grid-area: 2 / 1 / 3 / 3;
+        align-self: flex-start;
+        padding: 1.5em;
+
+        & ul{
+            line-height: 3.5em !important;
+        }
+
+        & ul li{
+            padding-bottom: .5em;
+        }
+    }
+
+    .contact__body{
+        padding: 1.5em;
+    }
+
+    .section__title--about,
+    .section__title--work,
+    .section__title--awards,
+    .section__title--contact{
+        padding-top: 1em;
+    }
+
+}
+
+
+@media (max-width: 480px){
+    .section-contact .comma{
+        display:none;
+    }
+}
+
+@media (max-width: 400px){
+    $fs-h1: 3rem;
+    $fs-h2: 1.5rem;
+    $fs-h2-2: 2.8rem;
+
+    h1{ 
+        font-size: $fs-h1;
+        line-height: 4rem !important;
+    }
+
+    .main-img{
+        padding-top: 4em !important;
+    }
+
+    .section__title--about,
+    .section__title--work,
+    .section__title--awards,
+    .section__title--contact{
+        padding-top: 2em;
+        font-size: $fs-h2-2 !important;
+    } 
+
+    .banner p{
+        font-size: $fs-h2;
+    }
+
+    .gallery{
+        padding: 0;
+    }
+
+    figcaption{
+        font-size: 1rem;
+    }
+
+    .awards__body{
+        & ul li::before {
+            font-size: 2rem !important;
+        } 
+    }
+
+    .contact__body{
+        padding: 0;
+        text-align: center;
+
+        input{
+            width: 90%;
+        }
+    }
+
+    .section-contact .submit span{
+        padding:0.8rem 0.3rem !important;
+    }
+
+}

@@ -1,0 +1,56 @@
+.about-me{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100vh;
+}
+
+
+.section__title--about{
+    color: $clr-dark;
+    font-size: $fs-h2-2;
+    place-self: center;
+}
+
+.section__subtitle--about{
+    color: $clr-dark;
+    background-color: $clr-accent;
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: .5rem;
+    width: fit-content;
+    align-self: center;
+    box-shadow: $bs;
+}
+
+.about-me__body{
+    padding: $fs-h3;
+    align-self: center;
+
+    p:nth-child(2){
+        margin-bottom: 4rem;
+    }
+}
+
+.wide{
+    letter-spacing:4px;
+}
+
+.light-clr{
+    color:#000;
+    background-color:$clr-accent;
+}
+
+.chart-container{
+    padding:0.01em 16px;
+}
+
+.padding-small{
+    padding:4px 8px;
+}
+
+.dark-clr{
+    color:$clr-light;
+    background-color:$clr-dark;
+}
+

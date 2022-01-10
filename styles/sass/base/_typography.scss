@@ -1,0 +1,30 @@
+.banner{
+
+    h1{
+        padding-top: 8rem;
+        font-family: $ff-headings;
+        font-weight: $fw-reg;
+        line-height: $fs-h1;
+    }
+
+    p{
+        font-size: $fs-h2;
+        text-transform: uppercase;
+    }
+}
+
+h1{
+    font-size: $fs-h1;
+}
+
+h2{
+    font-weight: $fw-reg;
+    font-size: $fs-h2;
+    font-family: $ff-headings;
+}
+
+h3{
+    font-size: $fs-h3;
+}
+
+
